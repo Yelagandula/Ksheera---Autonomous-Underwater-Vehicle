@@ -1,0 +1,31 @@
+import random
+import csv
+
+# Define the valid ranges for each parameter
+temperature_range = (10, 15)
+salinity_range = (30, 35)
+oxygen_range = (5, 8)
+ph_range = (7.0, 8.5)
+turbidity_range = (0.1, 1.0)
+
+# Generate 10,000 dummy data points
+data = []
+for hour in range(1, 25):
+    for _ in range(40000):
+        temperature = round(random.uniform(*temperature_range), 1)
+        salinity = round(random.uniform(*salinity_range), 1)
+        oxygen = round(random.uniform(*oxygen_range), 1)
+        ph = round(random.uniform(*ph_range), 1)
+        turbidity = round(random.uniform(*turbidity_range), 1)
+        fish_population = 'High' if (temperature >= 10 and temperature <= 15 and
+                                    salinity >= 30 and salinity <= 35 and
+                                    oxygen >= 5 and oxygen <= 8 and
+                                    ph >= 7.0 and ph <= 8.5 and
+                                    turbidity >= 0.1 and turbidity <= 1.0) else 'Low'
+        data.append([hour, temperature, salinity, oxygen, ph, turbidity, fish_population])
+
+# Write data to a CSV file
+with open('ocean_data1212.csv', 'w', newline='') as csvfile:
+    writer = csv.writer(csvfile)
+    writer.writerow(['Hour', 'Temperature (°C)', 'Salinity (ppt)', 'Oxygen levels (mg/L)', 'pH levels', 'Turbidity (NTU)', 'Fish population'])
+    writer.writerows(data)
