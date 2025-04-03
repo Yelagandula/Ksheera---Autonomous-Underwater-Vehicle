@@ -1,0 +1,11 @@
+Test scenario,Test ID,Category,Feature description,Pre-requisites,Test description/Steps to reproduce,Input data/Test data,Expected result,Actual result,Pass/Fail,Remarks
+Loading data,TC_001,Data Preparation,Loading CSV file,CSV file exists,Load the CSV file into a DataFrame,dataset.csv,Data is loaded successfully,Data is loaded successfully,Pass,
+Data preprocessing,TC_002,Data Preparation,Preprocessing data,Loaded data,Perform data preprocessing steps like scaling or normalization,Preprocessed data,Preprocessed data,Preprocessed data,Pass,
+Splitting data,TC_003,Data Preparation,Train-Test Split,Preprocessed data,Split the data into training and testing sets,Training data,Testing data,Training data,PASS,Pass
+Training SVM,TC_004,Model Training,Training the SVM model,Split data,Train the SVM model on the training data,Trained SVM model,Trained SVM model,Trained SVM model,Pass,
+Testing SVM,TC_005,Model Evaluation,Testing the SVM model,Trained SVM model,Make predictions on the testing data using the SVM model,Testing data,Predicted results,Actual results,PASS,Pass
+Accuracy evaluation,TC_006,Model Evaluation,Evaluating the model's accuracy,Testing data,Calculate the accuracy of the SVM model on the testing data,Testing data,Accuracy score,Accuracy score,PASS,Pass
+Saving model,TC_007,Model Persistence,Saving the trained model,Trained SVM model,Save the trained SVM model to a file,Trained SVM model,Saved model file,Saved model file,Pass,
+Loading model,TC_008,Model Persistence,Loading a saved model,Saved model file,Load the saved SVM model from a file,Saved model file,Loaded SVM model,Loaded SVM model,Pass,
+Prediction with new data,TC_009,Model Usage,Using the SVM model for prediction,Loaded SVM model,Provide new test data and make predictions using the SVM model,New test data,Predicted results,Predicted results,Pass,
+Visualization,TC_010,Result Visualization,Visualizing the SVM model results,Testing data,Plot the predicted results and actual results on a graph,Testing data,Graph showing predicted and actual results,Graph showing predicted and actual results,Pass,
