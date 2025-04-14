@@ -50,8 +50,10 @@ The design is made such that the bot can move inside and on the surface of the w
 5.2	Collection of data:
     Collection of data shall take place while the bot is present inside the water body where neutral buoyancy has been achieved the robot then covers the entire trajectory inside the water body itself taking the samples at different locations or different time intervals as assigned earlier. The chamber is shown in fig2. 
 It has multiple compartments. One is the large compartment where water at the given point is sucked in. Sensors are also placed in this compartment to check the water quality. It is proposed to check six parameters which include dissolved oxygen, ammonia content, salinity value, pH of the water, the pressure at that point, the temperature of the water at that point of time. The sensor data is analyzed and logged in memory. 
+
+
 ![image](https://github.com/user-attachments/assets/ce737634-e99e-4f7d-a734-9f355b2364da)
-Fig 2: Data storage chambers
+			Fig 2: Data storage chambers
 
 The big chamber is connected to multiple smaller chambers below it where the portion of samples is stored as per location geometry. Once the measurement is over, a small solenoid valve is opened to pass water to the bottom chamber. Further, this valve is closed and the remaining water is drained out. It does a similar action in each point and every point water samples, as well as corresponding data, are stored at their respective places. 
 The bot comes up and transfers this data through the LoRA communication link to the post. It marks the data with GPS. The Sensor data and collected samples are collected at the shore after the completion of the journey of the bot.
@@ -99,7 +101,7 @@ The idea is formulated by a group of students which are further discussed and de
 
 The robot dives into the water taking in various readings such as dissolved oxygen, pH, and barometric pressure. It processes that information and gives a probability of where the maximum number of fish could be found. So initially we choose a starting and that’s all you need to do. The rest is handled by the vehicle. It dives 5 meters into the water body and travels in straight lines to form a rectangle. It stops at, every corner of the rectangle to collect water samples and pictures of the area  and analyze values. Once it collects the sample it turns and moves towards the next vertex. It does this ‘N’ times, thereby completing a rectangle. It analyzes the values to form a probability distribution which it displays to the user understandably. This helps the authorities Know the location of people or things that are trapped underwater and they are identified and rescued.
  
-![image](https://github.com/user-attachments/assets/a5d6652d-13cb-4f51-a9e4-f640e5139af0)
+ ![image](https://github.com/user-attachments/assets/a5d6652d-13cb-4f51-a9e4-f640e5139af0)
 
 
 References : 
