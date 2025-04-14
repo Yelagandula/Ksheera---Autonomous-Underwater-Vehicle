@@ -110,3 +110,26 @@ References :
 5.	Gauging the Ganga- Guidelines for sampling and monitoring water quality.
 6.	Xianyu Zhang 1,2, Yingqi Zhang 1,2, Qian Zhang 1,2,*, Peiwu Liu 1, Rui Guo 1,2, Shengyi Jin 1, Jiawen Liu 1, Lei Chen 1, Zhen Ma 1,2 and Ying Liu, “Evaluation and Analysis of Water Quality of Marine Aquaculture Area”, Int. J. Environ. Res. Public Health 2020, 17, 1446; doi:10.3390/ijerph17041446
 
+
+
+
+Dashboard Design
+
+
+<img width="1256" alt="image" src="https://github.com/user-attachments/assets/c1e9c122-0dda-4360-aada-b02ae4275821" />
+
+
+<img width="1264" alt="image" src="https://github.com/user-attachments/assets/88eeccd9-0426-4ac8-9e25-0442b56b6c55" />
+
+
+<img width="1264" alt="image" src="https://github.com/user-attachments/assets/8d260d40-80f1-45d9-b4c8-c4d252371a76" />
+
+
+
+<img width="1268" alt="image" src="https://github.com/user-attachments/assets/17b0acb3-72ba-497b-b6a0-5df437c87b93" />
+
+
+<img width="1268" alt="image" src="https://github.com/user-attachments/assets/fdadd4cf-8f31-4d6f-aecc-d281b23a55da" />
+
+
+
